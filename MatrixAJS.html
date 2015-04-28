@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MOTUS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+<body ng-app="myMotus" background="AP.png">
+<div ng-controller="motusController">
+    
+        <center><h1>MOTUS</h1></center>
+
+         <br>
+         
+        <h2>Entrer un mot</h2>  
+        <input type="text" name="MOT" id="txt" size="30" value="" maxlength="8"/>
+            <br>
+            <br>
+            <input type="button" value="Valider" ng-click=""/>      
+        <br>
+        
+        
+        <center>
+    <span class="col" ng-repeat="row in matrix track by $index"><br/>
+     <span  class="col" ng-repeat="element in row track by $index">
+      <img src="Vide.jpg" width="70" height="70"  ng-click="toggle($index)" id=$index></img>
+     </span>
+    </span>
+       </center>
+<br/>
+
+</div>
+<script type="text/javascript">
+angular.module("myMotus",[])
+.controller("motusController",function($scope){
+
+
+$scope.matrix=[[,,,,,,],[,,,,,,],[,,,,,,],[,,,,,,],[,,,,,,],[,,,,,,]];
+
+}
+);
+</script>
+</body>
+</html>
