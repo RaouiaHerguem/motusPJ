@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>IMAGES DB</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+                <h1> c'est l'interface de la base de donnees des images du jeux motus </h1>
+        <script>
+            
+        var db = openDatabase('imagesdb', '1.0', 'La liste des mots', 2 * 1024);
+        db.transaction(function (tx) {
+        tx.executeSql('DROP TABLE images',null,function(){console.log('DROP SUCCEDED');},function(){console.log('DROP FAILED');}); 
+        tx.executeSql(
+                'CREATE TABLE IF NOT EXISTS images (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,image TEXT NON NULL);'
+            );   
+        tx.executeSql('INSERT INTO words (word) VALUES ("Vide.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("A0.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("B0.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("C0.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("D0.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("E0.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("F0.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("G0.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("H0.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("I0.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("J0.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("K0.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("L0.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("M0.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("N0.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("O0.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("P0.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("Q0.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("R0.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("S0.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("T0.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("U0.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("V0.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("W0.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("X0.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("Y0.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("Z0.jpg")');      
+        tx.executeSql('INSERT INTO words (word) VALUES ("A1.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("B1.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("C1.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("D1.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("E1.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("F1.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("G1.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("H1.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("I1.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("J1.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("K1.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("L1.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("M1.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("N1.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("O1.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("P1.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("Q1.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("R1.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("S1.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("T1.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("U1.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("V1.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("W1.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("X1.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("Y1.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("Z1.jpg")');       
+        tx.executeSql('INSERT INTO words (word) VALUES ("A2.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("B2.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("C2.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("D2.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("E2.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("F2.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("G2.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("H2.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("I2.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("J2.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("K2.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("L2.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("M2.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("N2.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("O2.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("P2.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("Q2.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("R2.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("S2.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("T2.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("U2.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("V2.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("W2.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("X2.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("Y2.jpg")');
+        tx.executeSql('INSERT INTO words (word) VALUES ("Z2.jpg")');       
+});
+
+        </script>
+    </body>
+</html>
