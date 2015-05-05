@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>>>MOTUS</title>
+  <style type="text/css">
+body{
+background:url('3.jpg') no-repeat center fixed ;
+-webkit-background-size: cover;
+}
+
+</style>
+</head>
+
+<body>
+ 
+  <div style="position:relative;">
+  <div style="opacity:0.5;position:absolute;left:50px;top:-30px;width:300px;height:150px;background-color:#40B3DF"></div>
+  <div style="opacity:0.3;position:absolute;left:120px;top:20px;width:100px;height:170px;background-color:#8AC007"></div>
+  <div style="margin-top:30px;width:360px;height:130px;padding:20px;border-radius:10px;border:10px solid #EE872A;font-size:120%;">
+	<h1>JEU MOTUS</h1>
+	<div style="letter-spacing:12px;font-size:15px;position:relative;left:25px;top:25px;">saisir un mot de 8 caractères</div>
+	</span></div>
+	</div>
+</div>
+
+<script>
+tx.executeSql('SELECT * FROM words', [], function (tx, results);
+var j = Math.random() * 27;
+var mot =results.rows.item(j).text;
+</script>
+
+<form action="action_page.php">
+MOT:<br>
+<br>
+<br>
+<input type="text" name="MOT" id="txt" size="30" value="" maxlength="8"/>
+<br>
+<br>
+<p><input type="button" class="bouton" value="tester" onclick="javascript:getExperience();" /></p>
+
+<br>
+<br>
+
+
+<caption>TABLEAU DE MOTUS</caption>
+<br>
+<br>
+</form>
+
+<table BORDER="4" CELLPADDING="3"> 
+   <tr>
+       <th>MOT 1</th>
+         
+       <td id="l1c1">   ?   </td>
+       <td id="l1c2">     ?    </td>
+       <td id="l1c3">     ?    </td>
+       <td id="l1c4">     ?    </td>
+       <td id="l1c5">     ?    </td>
+       <td id="l1c6">     ?    </td>
+       <td id="l1c7">     ?    </td>
+       <td id="l1c8">     ?    </td>
+   </tr>
+   <tr>
+       <th>MOT 2</th>
+       <td id="l2c1"> ? </td>
+       <td id="l2c2"> ? </td>
+	   <td id="l2c3"> ? </td>
+       <td id="l2c4"> ? </td>
+       <td id="l2c5"> ? </td>
+       <td id="l2c6"> ? </td>
+       <td id="l2c7"> ? </td>
+       <td id="l2c8"> ? </td>
+       
+   </tr>
+   <tr>
+       <th>MOT 3</th>
+       <td id="l3c1"> ? </td>
+       <td id="l3c2"> ? </td>
+	   <td id="l3c3"> ? </td>
+       <td id="l3c4"> ? </td>
+       <td id="l3c5"> ? </td>
+       <td id="l3c6"> ? </td>
+       <td id="l3c7"> ? </td>
+       <td id="l3c8"> ? </td>
+       
+   </tr>
+   <tr>
+       <th>MOT 4</th>
+       <td id="l4c1"> ? </td>
+       <td id="l4c2"> ? </td>
+	   <td id="l4c3"> ? </td>
+       <td id="l4c4"> ? </td>
+       <td id="l4c5"> ? </td>
+       <td id="l4c6"> ? </td>
+       <td id="l4c7"> ? </td>
+       <td id="l4c8"> ? </td>
+       
+   </tr>
+   <tr>
+       <th>MOT 5</th>
+       <td id="l5c1"> ? </td>
+       <td id="l5c2"> ? </td>
+	   <td id="l5c3"> ? </td>
+       <td id="l5c4"> ? </td>
+       <td id="l5c5"> ? </td>
+       <td id="l5c6"> ? </td>
+       <td id="l5c7"> ? </td>
+       <td id="l5c8"> ? </td>
+       
+   </tr>
+   <tr>
+       <th>MOT 6</th>
+       <td id="l6c1"> ? </td>
+       <td id="l6c2"> ? </td>
+	   <td id="l6c3"> ? </td>
+       <td id="l6c4"> ? </td>
+       <td id="l6c5"> ? </td>
+       <td id="l6c6"> ? </td>
+       <td id="l6c7"> ? </td>
+       <td id="l6c8"> ? </td>
+       
+   </tr>
+   <tr>
+       <th>MOT 7</th>
+       <td id="l7c1"> ? </td>
+       <td id="l7c2"> ? </td>
+	   <td id="l7c3"> ? </td>
+       <td id="l7c4"> ? </td>
+       <td id="l7c5"> ? </td>
+       <td id="l7c6"> ? </td>
+       <td id="l7c7"> ? </td>
+       <td id="l7c8"> ? </td>
+       
+   </tr>
+   <tr>
+       <th>MOT 8</th>
+       <td id="l8c1"> ? </td>
+       <td id="l8c2"> ? </td>
+	   <td id="l8c3"> ? </td>
+       <td id="l8c4"> ? </td>
+       <td id="l8c5"> ? </td>
+       <td id="l8c6"> ? </td>
+       <td id="l8c7"> ? </td>
+       <td id="l8c8"> ? </td>
+       
+   </tr>
+   <tr>
+       <th>RESULTAT: </th>
+	   <td colspan="8">     :) vous avez gagner :)</td>
+   </tr>
+   
+</table>
+
+<Script>
+var i= 1;
+function getExperience()
+{
+    var xp = document.getElementById('txt').value;
+	
+	
+	if(i<9){
+		
+	 document.getElementById("l"+i+"c1").innerHTML = xp[0];
+		document.getElementById("l"+i+"c2").innerHTML = xp[1];
+		document.getElementById("l"+i+"c3").innerHTML = xp[2];
+		document.getElementById("l"+i+"c4").innerHTML = xp[3];
+		document.getElementById("l"+i+"c5").innerHTML = xp[4];
+		document.getElementById("l"+i+"c6").innerHTML = xp[5];
+		document.getElementById("l"+i+"c7").innerHTML = xp[6];
+		document.getElementById("l"+i+"c8").innerHTML = xp[7];
+		i++;
+		}
+}
+</Script>
+</body>
+
+</html>
