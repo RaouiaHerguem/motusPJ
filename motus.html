@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MOTUS</title>
+  <meta charset="utf-8">
+  <script src="base.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="motus.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  
+</head>
+<body ng-app="motus" ng-controller="motus" background="AP.png">
+<div >
+    
+        <center><h1>MOTUS</h1></center>
+
+         <br>
+         
+        <h2>Entrer un mot</h2>  
+        <input type="text" name="MOT" id="txt" size="30" value="" maxlength="8" ng-model="essai"/>
+            <br>
+            <br>
+            <input type="button" value="Valider" ng-click="test()"/>      
+        <br>
+        
+        
+        </div>
+<div id="centre1">
+<table  border="3" >
+<tr ng-repeat="rows in matrix" align="center" valign="middle" width="20" height="20">
+<td ng-repeat="col in rows"><img src="{{col.img}}" width="70" height="70"></td>
+</tr>
+</table>
+</div>
+<br/>
+
+
+</body>
+</html>
